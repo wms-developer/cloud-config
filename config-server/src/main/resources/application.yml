@@ -1,0 +1,20 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8889/eureka/
+spring:
+  cloud:
+      config:
+        server:
+          git:
+            username: wms-developer
+            password: weiaini197152
+            uri: https://github.com/wms-developer/cloud_config
+            search-paths:
+            default-label: master
+  application:
+    name: config-server
+server:
+  port: 8095
+
+
